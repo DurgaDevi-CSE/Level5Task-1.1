@@ -14,8 +14,8 @@ class TodosController < ApplicationController
 
   def create
     todo_text = params[:todo_text]
-    due_date = DateTime.parse(params[:ddate])
-    new_todolist = Todo.create!(todo_text: todo_text, ddate: ddate, completed: false)
+    due_date = DateTime.parse(params[:due_date])
+    new_todolist = Todo.create!(todo_text: todo_text, due_date: ddate, completed: false)
     response = "Hey, your new todo is created with the id #{new_todolist.id}"
     render plain: response
   end
