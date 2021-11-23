@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TodoApp</title>
+    <title>My Todo Manager</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <h1 style="background-color:red; color:white;">The Todo Application</h1>
     <%= yield %>
+    <hr>
+    <p style="font-size:30px;"> TodoManager App (c) The Todo Company</p>
   </body>
 </html>
