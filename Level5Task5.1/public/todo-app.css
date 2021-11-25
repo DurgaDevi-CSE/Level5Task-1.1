@@ -26,6 +26,20 @@ body {
   margin-bottom: 6px;
   color: #453c52;
 }
+
+.TodoItem:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.TodoItem-Container {
+  visibility: hidden;
+}
+
+.TodoItem:hover .TodoItem-Container {
+  visibility: visible;
+}
+
 .TodoItem-Container{
   display: inline-flex;
   padding: 2px 8px;
